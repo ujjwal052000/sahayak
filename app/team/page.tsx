@@ -14,8 +14,8 @@ export default function TeamPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <div key={i} className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
-                <div className="w-full h-64 bg-gradient-to-br from-orange-200 to-orange-300 flex items-center justify-center">
-                  <span className="text-6xl font-bold text-orange-600">👤</span>
+                <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
+                  <span className="text-6xl font-bold text-gray-600">👤</span>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Team Member {i}</h3>

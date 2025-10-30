@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
@@ -19,10 +21,10 @@ export function Footer() {
               Sahayak is a leading Indian NGO, dedicated to promote education, community welfare, and environmental
               conservation with financial transparency.
             </p>
-            <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors flex items-center gap-2">
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
               Contact Us Now
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </Link>
           </div>
 
           {/* About Us Column */}
@@ -129,10 +131,10 @@ export function Footer() {
           {/* CTA Box */}
           <div className="bg-white text-slate-900 p-6 rounded-lg">
             <h4 className="font-bold text-lg mb-4">Ready To Bring The Change. Let's Get To Work Now!</h4>
-            <button className="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2">
+            <Link href="/donate" className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
               Donate For The Cause
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </Link>
           </div>
         </div>
 

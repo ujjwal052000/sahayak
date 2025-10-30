@@ -18,13 +18,9 @@ export function NewsletterSection() {
   }
 
   return (
-    <section className="bg-gradient-to-r from-green-500 to-green-600 py-16 px-4 md:px-8 relative overflow-hidden">
-      {/* Decorative circles */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-green-400 rounded-full opacity-10 -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-700 rounded-full opacity-10 translate-x-1/2 translate-y-1/2"></div>
-
-      <div className="max-w-6xl mx-auto relative z-10">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+    <section className="bg-gray-900 py-20 px-4 md:px-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left side */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -32,28 +28,29 @@ export function NewsletterSection() {
               <br />
               From Us.
             </h2>
+            <p className="text-gray-300 text-lg">Stay connected with Sahayak's mission and impact stories.</p>
           </div>
 
           {/* Right side */}
           <div>
-            <p className="text-white text-lg mb-6">Subscribe to Our Newsletter Now!</p>
-            <form onSubmit={handleSubmit} className="flex gap-2">
+            <p className="text-white text-lg mb-6 font-semibold">Subscribe to Our Newsletter Now!</p>
+            <form onSubmit={handleSubmit} className="flex gap-3">
               <input
                 type="email"
-                placeholder="Enter Your E-Mail Id"
+                placeholder="Enter Your E-Mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="flex-1 px-6 py-3 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="flex-1 px-6 py-4 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
               <button
                 type="submit"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors shadow-lg"
               >
                 Subscribe
               </button>
             </form>
-            {submitted && <p className="text-white mt-3 text-sm">Thank you for subscribing!</p>}
+            {submitted && <p className="text-white mt-4 text-sm font-semibold">✓ Thank you for subscribing!</p>}
           </div>
         </div>
 

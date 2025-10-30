@@ -44,7 +44,7 @@ export default function BlogsPage() {
                 key={i}
                 className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition cursor-pointer"
               >
-                <div className="h-48 bg-gradient-to-br from-orange-200 to-orange-300"></div>
+                <div className="h-48 bg-gray-200"></div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-semibold text-orange-600 bg-orange-50 px-3 py-1 rounded-full">
